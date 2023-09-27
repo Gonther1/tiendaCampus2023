@@ -16,6 +16,8 @@ namespace Infraestructura.Data
         public DbSet<Pais> Paises { get; set; }
         public DbSet<Departamento> Departamentos { get; set; }
         public DbSet<Ciudad> Ciudades { get; set; }
+        public DbSet<UbicacionPersona> UbicacionesPersonas { get; set; }
+        public DbSet<Persona> Personas { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

@@ -5,12 +5,10 @@ using System.Threading.Tasks;
 
 namespace Core.Entities
 {
-    public class Ciudad:BaseEntity
+    public class Persona:BaseEntity
     {
         public string Nombre { get; set; }
-        public int IdDepartamentoFk { get; set; }
-        public Departamento Departamentos { get; set; }
+        public string FechaRegistro { get; set; }
         public ICollection<UbicacionPersona> UbicacionesPersonas { get; set; }
-        
     }
 }
